@@ -9,9 +9,9 @@ var gitPath, timerLogPath;
 const autosaveDuration = 5;
 const timerlogfile = 'timerlog.json';
 
-module.exports.start = function({gitPath = '../git', timerLogPath = `../${timerlogfile}`}){
+module.exports.start = function({gitPath = '../git/', timerLogPath = '../'}){
   gitPath = gitPath,
-  timerLogPath = timerLogPath,
+  timerLogPath = `timerLogPath${timerlogfile}`,
   getTimerLog().then(data => {
     preperUserBlock(data);
   }).catch(error => createTimeLogFile().then(result => preperUserBlock(null) ));
