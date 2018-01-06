@@ -6,7 +6,7 @@ Node apps time logger
 ### Usage
 - git config user.name "Your Name"
 - git config user.email email@example.com
-
+ 
     const timer = require('contributors-timer');
     
     const gitPath = '../.git/';
