@@ -8,10 +8,10 @@
   },
   "author": "Anas Abudayah <anas.abudayah@gmail.com>",
   "bugs": {
-    "url": "https://gitlab.com/abudayah/contributors-timer/issues"
+    "url": "https://github.com/abudayah/contributors-timer/issues"
   },
   "repository": {
-    "url": "https://gitlab.com/abudayah/contributors-timer",
+    "url": "https://github.com/abudayah/contributors-timer",
     "type": "git",
     "contributors": []
   },
