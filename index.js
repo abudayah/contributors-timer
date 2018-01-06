@@ -1,23 +1,24 @@
-// I don't know how!, but this shit is working but it needs to be revamped
+// I don't know how!, but this shit is working and it needs to be revamped
 // run node -e 'require("./index").start({})'
 
 var fs = require('fs'), gitConfig = require('parse-git-config'), moment = require('moment');
 var timerlog, gitConfigData, gitCurrentBranch, userBlock;
 
 // configs
-var gitPath, timerLogPath;
 const autosaveDuration = 5;
 const timerlogfile = 'timerlog.json';
+var gitPath, timerLogPath, timerLogFilePath;
 
-module.exports.start = function({gitPath = '../git/', timerLogPath = '../'}){
-  gitPath = gitPath,
-  timerLogPath = `timerLogPath${timerlogfile}`,
+module.exports.start = function(confGitPath = '.git/', confTimerLogPath = './'){
+  gitPath = confGitPath;
+  timerLogFilePath = confTimerLogPath + timerlogfile;
+  
   getTimerLog().then(data => {
     preperUserBlock(data);
   }).catch(error => createTimeLogFile().then(result => preperUserBlock(null) ));
 }
 
-const getTimerLog = (path = timerLogPath, opts = 'utf8') =>
+const getTimerLog = (path = timerLogFilePath, opts = 'utf8') =>
     new Promise((resolve, reject) => {
       fs.readFile(path, opts, (err, data) => {
         if (err) reject(err)
@@ -25,7 +26,7 @@ const getTimerLog = (path = timerLogPath, opts = 'utf8') =>
       })
     });
     
-const createTimeLogFile = (path = timerLogPath, opts = 'utf8') =>
+const createTimeLogFile = (path = timerLogFilePath, opts = 'utf8') =>
     new Promise((resolve, reject) => {
       fs.writeFile(path, '', (err) => {
         if (err) reject(err)
@@ -107,7 +108,7 @@ function log(timer){
 }
 
 function updateTimerLog () {
-  fs.writeFile(timerLogPath, JSON.stringify(timerlog), function(err) {
+  fs.writeFile(timerLogFilePath, JSON.stringify(timerlog), function(err) {
     if(err) {
       return console.log(err);
     }
