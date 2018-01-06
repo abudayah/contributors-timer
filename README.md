@@ -3,6 +3,11 @@ Node apps time logger
 ### Requirments
 - nodejs v8.9.3 and up
 
+### Install
+`yarn add contributors-timer`
+or
+`npm i contributors-timer`
+
 ### Usage
 Add email and user name for git
 
