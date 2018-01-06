@@ -4,14 +4,13 @@ Node apps time logger
 - nodejs v8.9.3 and up
 
 ### Usage
-- git config user.name "Your Name"
-- git config user.email email@example.com
- 
+git config user.name "Your Name"
+git config user.email email@example.com
+
+
     const timer = require('contributors-timer');
-    
     const gitPath = '../.git/';
     const timerlogPath = './';
-    
     timer.start(gitPath, timerlogPath);
 
 ### Preview
