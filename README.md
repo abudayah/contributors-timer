@@ -15,15 +15,14 @@ Node apps time logger
     timer.start(gitPath, timerlogPath);
 
 ### Preview
-`{
-  "email@example.com": {
-    "name":"Your Name",
-    "email":"email@example.com",
-    "total_time":45,
-    "branches":
     {
-      "master":45
+      "email@example.com": {
+        "name":"Your Name",
+        "email":"email@example.com",
+        "total_time":45,
+        "branches":
+        {
+          "master":45
+        }
+      }
     }
-  }
-}
-`
