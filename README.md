@@ -7,14 +7,14 @@ Node apps time logger
 - git config user.name "Your Name"
 - git config user.email email@example.com
 
-`
+
 const timer = require('contributors-timer');
 
 const gitPath = '../.git/';
 const timerlogPath = './';
 
 timer.start(gitPath, timerlogPath);
-`
+
 
 ### Preview
 `{
