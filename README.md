@@ -10,6 +10,7 @@ Add email and user name for git
     git config user.email email@example.com
 
 in your app
+
     const timer = require('contributors-timer');
     const gitPath = './.git/';
     const timerlogPath = './';
