@@ -1,0 +1,11 @@
+{
+	"anas.abudayah@gmail.com": {
+		"name": "Anas Abudayah",
+		"email": "anas.abudayah@gmail.com",
+		"total_time": 0,
+		"branches": {
+			"master": 0,
+			"develop": 10
+		}
+	}
+}
