@@ -1,5 +1,4 @@
-// I don't know how!, but this shit is working and it needs to be revamped
-// run node -e 'require("./index").start({})'
+// Please read this: https://github.com/abudayah/contributors-timer/blob/master/README.md
 
 var fs = require('fs'), gitConfig = require('parse-git-config'), moment = require('moment');
 var timerlog, gitConfigData, gitCurrentBranch, userBlock;
