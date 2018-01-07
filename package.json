@@ -1,6 +1,6 @@
 {
   "name": "contributors-timer",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Simple contributors timer",
   "main": "index.js",
   "engines": {
@@ -18,7 +18,12 @@
     "type": "git",
     "contributors": []
   },
-  "keywords": ["git","timer","logger","contributor"],
+  "keywords": [
+    "git",
+    "timer",
+    "logger",
+    "contributor"
+  ],
   "license": "ISC",
   "dependencies": {
     "moment": "^2.20.1",
