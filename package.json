@@ -1,8 +1,11 @@
 {
   "name": "contributors-timer",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Simple contributors timer",
   "main": "index.js",
+  "engines": {
+    "node": ">8.0.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,6 +18,7 @@
     "type": "git",
     "contributors": []
   },
+  "keywords": ["git","timer","logger","contributor"],
   "license": "ISC",
   "dependencies": {
     "moment": "^2.20.1",
