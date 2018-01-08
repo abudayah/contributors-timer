@@ -1,12 +1,12 @@
 Node apps time logger; it's helpful to count the time you spend in Nodejs project.
 
-### How this is works ?
+## How this is works ?
 - Getting user information form .git/config file.
 - Getting current appointed branch from.
 - Creates a JSON file in your repo folder "timerlog.json"
 - Saving duration time each 5 seconds.
 
-### Install
+## Install
 ```
 yarn add contributors-timer
 ```
@@ -15,7 +15,7 @@ or
 npm i contributors-timer
 ```
 
-### Usage
+## Usage
 Add email and user name for git
 
     git config user.name "Your Name"
@@ -34,7 +34,7 @@ or in your ternmail
     
     node -e 'require("./index").start("./.git/","./")'
 
-### Preview
+## Preview
     {
       "user1@example.com": {
         "name": "User 1",
