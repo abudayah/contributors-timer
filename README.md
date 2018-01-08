@@ -30,7 +30,7 @@ in your app
     
     timer.start(gitPath, timerlogPath);
     
-or in your ternmail
+or in your terminal
     
     node -e 'require("./index").start("./.git/","./")'
 
