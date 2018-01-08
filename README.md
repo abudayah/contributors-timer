@@ -4,7 +4,7 @@ Node apps time logger; it's helpful to count the time you spend in Nodejs projec
 - Getting user information form .git/config file.
 - Getting current appointed branch from.
 - Creates a JSON file in your repo folder "timerlog.json"
-- Saving duration time each 5 seconds.
+- Saving duration time each 60 seconds.
 
 ## Install
 ```
