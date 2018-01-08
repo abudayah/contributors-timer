@@ -1,9 +1,9 @@
-Node apps time logger; it's helpful to count the time you spend in nodejs project.
+Node apps time logger; it's helpful to count the time you spend in Nodejs project.
 
 ### How this is works ?
 - Getting user information form .git/config file.
 - Getting current appointed branch from.
-- creates a JSON file in your repo folder "timerlog.json"
+- Creates a JSON file in your repo folder "timerlog.json"
 - Saving duration time each 5 seconds.
 
 ### Install
