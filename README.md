@@ -7,9 +7,13 @@ Node apps time logger; it's helpful to count the time you spend in Nodejs projec
 - Saving duration time each 5 seconds.
 
 ### Install
-`yarn add contributors-timer`
+```
+yarn add contributors-timer
+```
 or
-`npm i contributors-timer`
+```
+npm i contributors-timer
+```
 
 ### Usage
 Add email and user name for git
@@ -42,7 +46,7 @@ or in your ternmail
           "develop": 234,
         }
       },
-      "email@example.com": {
+      "user2@example.com": {
         ...
       }
     }
