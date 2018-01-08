@@ -1,6 +1,6 @@
 const ContrTimer = require('./contrTimer.module');
 
-module.exports.start = function(confGitPath = '.git/', confTimerLogPath = './', autosaveDuration = 5){
+module.exports.start = function(confGitPath = '.git/', confTimerLogPath = './', autosaveDuration = 60){
   let module = new ContrTimer({
     timerLogPath: confTimerLogPath,
     gitPath: confGitPath,
