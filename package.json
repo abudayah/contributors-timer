@@ -22,7 +22,8 @@
     "git",
     "timer",
     "logger",
-    "contributor"
+    "contributor",
+    "productivity"
   ],
   "license": "ISC",
   "dependencies": {

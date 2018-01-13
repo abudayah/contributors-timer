@@ -1,3 +1,7 @@
+/**
+ * Contributors Timer module
+ * Author: anas.abudayah@gmail.com
+ */
 'use strict';
 
 var fs = require('fs');
@@ -30,6 +34,11 @@ class ContrTimer {
     ));
   }
   
+  /**
+   * Read timerlog.json file
+   * @method getTimerLog
+   * @return {[JSON]}
+   */
   getTimerLog(path = this.timerLogFilePath, opts = 'utf8'){
     return new Promise(function (resolve, reject){
       fs.readFile(path, opts, (error, data) => {
@@ -50,6 +59,11 @@ class ContrTimer {
     });
   }
   
+  /**
+   * Git current branch from .git/HEAD
+   * @method getCurrentBranch
+   * @return {[String]}
+   */
   getCurrentBranch (path = this.gitPath + 'HEAD', opts = 'utf8') {
     return new Promise((resolve, reject) => {
       fs.readFile(path, opts, (error, data) => {
@@ -59,6 +73,11 @@ class ContrTimer {
     });
   }
   
+  /**
+   * Get user block or create one
+   * @method getUser
+   * @return {[JSON]}
+   */
   getUser(){
     this.gitConfigData = this.getGITConfig();
     
@@ -81,6 +100,11 @@ class ContrTimer {
     }
   }
   
+  /**
+   * Get git configration file .git/config
+   * @method getGITConfig
+   * @return {[JSON]}
+   */
   getGITConfig(){
     return gitConfig.sync({path: this.gitPath + 'config'});
   }
@@ -117,6 +141,9 @@ class ContrTimer {
     });
   }
   
+  /**
+   * Print total duration spent on current branch in command line
+   */
   log (timer){
     let duration = moment.duration(timer, 'seconds');
     let formatted = Math.floor(duration.asHours()) + moment.utc(duration.asMilliseconds()).format(':mm:ss');
