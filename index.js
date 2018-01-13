@@ -1,9 +1,10 @@
 const ContrTimer = require('./contrTimer.module');
 
 /**
- * initiate method
  * Please read this:
  * https://github.com/abudayah/contributors-timer/blob/master/README.md
+ *
+ * initiate method
  * @method start
  * @param  {String} '.git/'   [default git folder]
  * @param  {String} './'      [default root folder]
