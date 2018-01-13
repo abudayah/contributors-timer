@@ -24,9 +24,9 @@ class ContrTimer {
   
   run(){
     this.getTimerLog().then(data => {
-      this.preperUserBlock(data);
+      this.prepareUserBlock(data);
     }).catch(() => this.createTimeLogFile().then(() =>
-      this.preperUserBlock(null)
+      this.prepareUserBlock(null)
     ));
   }
   
@@ -39,7 +39,7 @@ class ContrTimer {
     });
   }
   
-  preperUserBlock(data){
+  prepareUserBlock(data){
     this.timerlog = (data) ? JSON.parse(data) : false;
     this.userBlock = this.getUser();
     this.currentBranch = this.getCurrentBranch();
