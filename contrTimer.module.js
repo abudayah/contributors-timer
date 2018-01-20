@@ -69,6 +69,17 @@ var ContrTimer = function () {
       });
     }
   }, {
+    key: 'createTimeLogFile',
+    value: function createTimeLogFile() {
+      var path = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this.timerLogFilePath;
+
+      return new Promise(function (resolve, reject) {
+        fs.writeFile(path, '', function (error) {
+          if (error) reject(error);else resolve(true);
+        });
+      });
+    }
+  }, {
     key: 'prepareUserBlock',
     value: function prepareUserBlock(data) {
       var _this2 = this;

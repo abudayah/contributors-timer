@@ -49,6 +49,15 @@ class ContrTimer {
     });
   }
   
+  createTimeLogFile(path = this.timerLogFilePath){
+    return new Promise((resolve, reject) => {
+      fs.writeFile(path, '', (error) => {
+        if (error) reject(error);
+        else resolve(true);
+      });
+    });
+  }
+  
   prepareUserBlock(data){
     this.timerlog = (data) ? JSON.parse(data) : false;
     this.userBlock = this.getUser();
