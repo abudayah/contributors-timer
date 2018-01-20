@@ -4,9 +4,11 @@
   "description": "Simple contributors timer",
   "main": "index.js",
   "engines": {
-    "node": ">8.0.0"
+    "node": ">4.0.0"
   },
   "scripts": {
+    "start": "node -e 'require(\"./index\").start()'",
+    "compile": "babel src/ -d ./ --presets=es2015",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Anas Abudayah <anas.abudayah@gmail.com>",
@@ -31,6 +33,9 @@
     "parse-git-config": "^1.1.1"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
     "eslint": "^4.15.0",
     "eslint-config-standard": "^11.0.0-beta.0",
     "eslint-plugin-import": "^2.8.0",
