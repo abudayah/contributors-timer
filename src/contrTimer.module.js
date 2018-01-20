@@ -4,6 +4,7 @@
  */
 'use strict';
 
+require('babel-polyfill');
 var fs = require('fs');
 var gitConfig = require('parse-git-config');
 var moment = require('moment');
