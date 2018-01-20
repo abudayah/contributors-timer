@@ -1,6 +1,6 @@
 {
   "name": "contributors-timer",
-  "version": "1.0.6",
+  "version": "1.1.0",
   "description": "Simple contributors timer",
   "main": "index.js",
   "engines": {
