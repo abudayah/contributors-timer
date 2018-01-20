@@ -31,9 +31,13 @@ in your app
     timer.start(gitPath, timerlogPath);
     
 or in your terminal
-    
-    node -e 'require("./index").start("./.git/","./")'
-
+```
+yarn start
+```
+or
+```
+npm run start
+```
 ## Preview
     {
       "user1@example.com": {
